@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amal Paul | Premium Fullstack Developer</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</head>
+
+<body>
+    <!-- Premium Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- 3D Background Container -->
+    <div id="three-canvas-container"></div>
+
+    <header id="header">
+        <nav>
+            <div class="logo">AMAL.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#experience">Experiance</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Premium Hero -->
+        <section id="home" class="hero">
+            <div class="floating-shapes">
+                <div class="shape shape-1" data-tilt data-tilt-speed="1000" data-tilt-max="20"></div>
+                <div class="shape shape-2" data-tilt data-tilt-speed="1000" data-tilt-max="20"></div>
+                <div class="shape shape-3" data-tilt data-tilt-speed="1000" data-tilt-max="20"></div>
+            </div>
+            <div class="container" data-aos="zoom-out" data-aos-duration="1500" data-tilt data-tilt-max="3"
+                data-tilt-full-page-listening>
+                <!-- <span class="hero-tag">Available for new opportunities</span> -->
+                <h1 class="hero-tag">Full-Stack MERN / Web <span class="text-gradient">Developer</span></h1>
+                <p>Hello, I'm Amal Paul — Web Developer & MERN Stack Specialist with hands-on project experience.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-premium btn-primary">Experimental Work <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-premium btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="section-head" data-aos="fade-up">
+                    <h2>About Me</h2>
+                    <p>Passionate about building reliable, user-centric applications.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-right">
+                        <div class="profile-frame" data-tilt data-tilt-max="10" data-tilt-speed="400"
+                            data-tilt-perspective="1000">
+                            <img src="avatar.png" alt="Amal Paul Profile">
+                        </div>
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <div class="glass-panel about-details" style="padding: 40px;">
+                            <h3>Developer</h3>
+                            <p>MCA graduate Web Developer with MERN Stack expertise in building responsive applications.
+                                Strong in clean UI implementation, usability, and full-stack development.</p>
+
+                            <div class="expertise-grid">
+                                <div class="expertise-item">
+                                    <i class="fa-solid fa-code text-gradient"></i>
+                                    <div>
+                                        <h4>Frontend</h4>
+                                        <p>HTML, CSS3, Javascript, React</p>
+                                    </div>
+                                </div>
+                                <div class="expertise-item">
+                                    <i class="fa-solid fa-server text-gradient"></i>
+                                    <div>
+                                        <h4>Backend</h4>
+                                        <p>Node.js, Express, MongoDB</p>
+                                    </div>
+                                </div>
+                                <div class="expertise-item">
+                                    <i class="fa-solid fa-swatchbook text-gradient"></i>
+                                    <div>
+                                        <h4>UX Design</h4>
+                                        <p>Figma, Wireframing, Responsive Layouts</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stats-row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <div class="section-head" data-aos="fade-up">
+                    <h2>Skills & Technologies</h2>
+                    <p>Technologies powering scalable web applications.</p>
+                </div>
+                <div class="stack-showcase">
+                    <div class="skill-pill glass-panel" data-aos="fade-up">HTML5</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="100">CSS3</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="200">Javascript (ES6+)</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="300">React.js</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="400">Redux</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="500">Bootstrap</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="600">Tailwind CSS</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="100">Node.js</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="200">Express.js</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="300">RESTful APIs</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="400">MongoDB</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="500">Mongoose</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="500">MySQL</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="100">Git</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="200">AWS</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="300">Figma</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="400">Adobe Photoshop</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="500">Adobe Illustrator</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="500">UI/UX Design</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="100">VS Code</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="200">Postman</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="300">NPM</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="400">Webpack</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="500">CMS</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="500">API Integration</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="100">Responsive Design</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="200">Problem Solving</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="300">Team Collaboration</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="400">Communication</div>
+                    <div class="skill-pill glass-panel" data-aos="fade-up" data-aos-delay="500">Self-Learning</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-head" data-aos="fade-up">
+                    <h2>Projects & Case Studies</h2>
+                    <p>Showcasing full-stack development and UI expertise.</p>
+                </div>
+                <div class="work-grid">
+                    <div class="work-card glass-panel" data-aos="flip-up" data-tilt data-tilt-max="5" data-tilt-glare
+                        data-tilt-max-glare="0.3"
+                        style="padding: 40px; min-height: 250px; display: flex; flex-direction: column; justify-content: flex-end;">
+                        <div class="work-content">
+                            <span style="color: var(--primary);">Fullstack</span>
+                            <h3>Sports Hub – E-Commerce Web Application</h3>
+                            <p>Built a full-stack MERN e-commerce platform using MVC architecture with secure Google OAuth, Razorpay payments, and auto pincode detection.
+                                Deployed on AWS to deliver a scalable, production-ready shopping experience.</p>
+                            <div class="exp-links">
+                                <a href="https://github.com/amalPaul-m/Sports-Hub" target="_blank" class="exp-link"><i
+                                        class="fa-brands fa-github"></i> Source</a>
+                                <a href="https://sports-hub.shop/" target="_blank" class="exp-link"><i
+                                        class="fa-solid fa-globe"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card glass-panel" data-aos="flip-up" data-aos-delay="100" data-tilt
+                        data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.3"
+                        style="padding: 40px; min-height: 250px; display: flex; flex-direction: column; justify-content: flex-end;">
+                        <div class="work-content">
+                            <span style="color: var(--primary);">Fullstack</span>
+                            <h3>Join The Movement – Investor Onboarding & Payment Web Application</h3>
+                            <p>Developed a secure MERN-based platform with email OTP and Google OAuth authentication for seamless investor onboarding.</p>
+                            <div class="exp-links">
+                                <a href="https://github.com/amalPaul-m/Join-the-Movement" target="_blank" class="exp-link"><i
+                                        class="fa-brands fa-github"></i> Source</a>
+                                <a href="https://jointhemovement.io/" target="_blank" class="exp-link"><i
+                                        class="fa-solid fa-globe"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card glass-panel" data-aos="flip-up" data-aos-delay="100" data-tilt
+                        data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.3"
+                        style="padding: 40px; min-height: 250px; display: flex; flex-direction: column; justify-content: flex-end;">
+                        <div class="work-content">
+                            <span style="color: var(--primary);">Full Stack</span>
+                            <h3>e-ERA – Digital E-Directory & Membership Management Application</h3>
+                            <p>Building a secure e-directory with family logins and membership fee management.
+                                Includes financial tracking and a centralized admin panel for full data control.</p>
+                            <div class="exp-links">
+                                <a href="" target="_blank" class="exp-link"><i
+                                        class="fa-brands fa-github"></i> Source</a>
+                                <a href="" target="_blank" class="exp-link"><i
+                                        class="fa-solid fa-globe"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card glass-panel" data-aos="flip-up" data-aos-delay="100" data-tilt
+                        data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.3"
+                        style="padding: 40px; min-height: 250px; display: flex; flex-direction: column; justify-content: flex-end;">
+                        <div class="work-content">
+                            <span style="color: var(--primary);">Frontend</span>
+                            <h3>Cain Builders – Official Website for an Architectural Firm</h3>
+                            <p>Developed a modern, responsive website integrating the YouTube API to showcase architectural videos and project highlights.
+                                Focused on clean UI, performance optimization, and a polished brand-centric user experience.</p>
+                            <div class="exp-links">
+                                <a href="https://github.com/amalPaul-m/CAIN-BUILDERS-PROJECT" target="_blank" class="exp-link"><i
+                                        class="fa-brands fa-github"></i> Source</a>
+                                <a href="" target="_blank" class="exp-link"><i
+                                        class="fa-solid fa-globe"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card glass-panel" data-aos="flip-up" data-aos-delay="100" data-tilt
+                        data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.3"
+                        style="padding: 40px; min-height: 250px; display: flex; flex-direction: column; justify-content: flex-end;">
+                        <div class="work-content">
+                            <span style="color: var(--primary);">Micro Project</span>
+                            <h3>Uber Ride-Hailing Application - Clone</h3>
+                            <p>Developed a responsive frontend clone of the Uber app using modern web technologies.
+                                Focused on UI/UX, interactive maps, and realistic ride-booking interface without backend integration.</p>
+                            <div class="exp-links">
+                                <a href="https://github.com/amalPaul-m/Uber-Clone" target="_blank" class="exp-link"><i
+                                        class="fa-brands fa-github"></i> Source</a>
+                                <a href="" target="_blank" class="exp-link"><i
+                                        class="fa-solid fa-globe"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card glass-panel" data-aos="flip-up" data-aos-delay="100" data-tilt
+                        data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.3"
+                        style="padding: 40px; min-height: 250px; display: flex; flex-direction: column; justify-content: flex-end;">
+                        <div class="work-content">
+                            <span style="color: var(--primary);">Micro Project</span>
+                            <h3>Kerala PWD - Clone</h3>
+                            <p>Developed a responsive frontend clone of the Kerala Public Works Department website.
+                                Focused on clean UI, navigation, and realistic representation of official site features without backend integration.</p>
+                            <div class="exp-links">
+                                <a href="https://github.com/amalPaul-m/Kerala-PWD-Clone" target="_blank" class="exp-link"><i
+                                        class="fa-brands fa-github"></i> Source</a>
+                                <a href="" target="_blank" class="exp-link"><i
+                                        class="fa-solid fa-globe"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <div class="section-head" data-aos="fade-up">
+                    <h2>Journey</h2>
+                    <p>Professional path through code and logic.</p>
+                </div>
+                <div class="timeline">
+                    <div class="exp-item glass-panel" data-aos="fade-left" style="padding: 32px; margin-bottom: 24px;">
+                        <span style="color: var(--primary); font-weight: 700;">July 2021 – Jan 2025</span>
+                        <h3 style="margin: 8px 0;">Business & Software Operations</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">Aashirvad Cinemas Pvt. Ltd</p>
+                    </div>
+                    <div class="exp-item glass-panel" data-aos="fade-left" style="padding: 32px; margin-bottom: 24px;">
+                        <span style="color: var(--primary); font-weight: 700;">May 2020 – July 2021</span>
+                        <h3 style="margin: 8px 0;">UI/Web Developer</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">ZCODEZ Technologies Pvt. Ltd</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="contact-box glass-panel" data-aos="zoom-in"
+                    style="padding: 60px; max-width: 800px; margin: 0 auto;">
+                    <div class="contact-header" style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="font-size: 2.5rem;">Initialize Connection</h2>
+                        <p style="color: var(--text-muted);">Drop a message, let's create something iconic.</p>
+                    </div>
+
+                    <div class="social-links-container" data-aos="fade-up">
+                        <a href="https://github.com/amalPaul-m" target="_blank" class="social-icon-btn" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amal-paul-520b15201" target="_blank" class="social-icon-btn"
+                            title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="tel:+918301877983" target="_blank" class="social-icon-btn"
+                            title="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="mailto:iamamalpaul1367@gmail.com" class="social-icon-btn" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                    <form action="https://formspree.io/f/YOUR_ID" method="POST" class="premium-form">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Address" required>
+                        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn-premium btn-primary" style="justify-content: center;">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> amal_paul</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+
+</html>
