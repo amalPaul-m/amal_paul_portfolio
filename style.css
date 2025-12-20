@@ -178,6 +178,10 @@ nav {
     gap: 32px;
 }
 
+.nav-links li {
+    list-style: none;
+}
+
 .nav-links a {
     text-decoration: none;
     color: var(--text-muted);
@@ -190,6 +194,11 @@ nav {
 .nav-links a.active {
     color: #fff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Hide menu toggle by default (desktop) */
+.menu-toggle {
+    display: none;
 }
 
 /* Buttons */
