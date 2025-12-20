@@ -145,4 +145,54 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     initThreeJS();
+
+    // --- Formspree AJAX Submission ---
+    const contactForm = document.getElementById('contact-form');
+    const contactStatus = document.getElementById('contact-status');
+    const submitBtn = document.getElementById('form-submit-btn');
+
+    if (contactForm && contactStatus && submitBtn) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+            const btnText = submitBtn.querySelector('.btn-text');
+
+            // Initial state
+            submitBtn.disabled = true;
+            if (btnText) btnText.textContent = 'Initializing...';
+            contactStatus.textContent = '';
+            contactStatus.className = 'contact-status';
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    contactStatus.textContent = 'Message sent successfully! I will get back to you soon.';
+                    contactStatus.classList.add('success');
+                    contactForm.reset();
+                } else {
+                    const data = await response.json();
+                    if (data.errors) {
+                        contactStatus.textContent = data.errors.map(error => error.message).join(', ');
+                    } else {
+                        contactStatus.textContent = 'Oops! There was a problem submitting your form.';
+                    }
+                    contactStatus.classList.add('error');
+                }
+            } catch (error) {
+                contactStatus.textContent = 'Oops! There was a problem submitting your form. Please try again.';
+                contactStatus.classList.add('error');
+            } finally {
+                submitBtn.disabled = false;
+                if (btnText) btnText.textContent = 'Send Message';
+            }
+        });
+    }
 });
